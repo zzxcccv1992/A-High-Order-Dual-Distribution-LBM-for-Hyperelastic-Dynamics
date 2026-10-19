@@ -1,0 +1,28 @@
+{
+  "physical": {
+    "length_m": 0.06,
+    "height_m": 0.018,
+    "rho0_kg_m3": 7850.0,
+    "lambda_Pa": 115000000000.0,
+    "mu_Pa": 77000000000.0,
+    "traction_amplitude_Pa": 1000000.0
+  },
+  "loading": {
+    "frequency_rule": "cp/(2*length)",
+    "cycles": 1,
+    "direction": [1.0, 0.0]
+  },
+  "numerical": {
+    "resolution": [60, 18],
+    "longitudinal_courant": 0.5,
+    "tau_f": 0.85,
+    "tau_g": 0.85,
+    "padding": 8,
+    "recovery_tolerance": 2e-11,
+    "recovery_iterations": 40,
+    "recovery_relaxation": 1.0
+  },
+  "output": {
+    "snapshot_times_code": [0.5, 1.0, 1.5, 2.0, 3.0, 4.0]
+  }
+}
